@@ -29,7 +29,8 @@ pub fn keyed_account(message: &SanitizedMessage) -> (Pubkey, Account) {
             })
             .collect::<Vec<_>>()
             .as_slice(),
-    );
+    )
+    .expect("instructions must fit in the instructions sysvar");
 
     (
         solana_instructions_sysvar::ID,

@@ -21,7 +21,6 @@ pub fn compare_svm_feature_sets(a: &SVMFeatureSet, b: &SVMFeatureSet) {
     }
     cmp! {
         move_precompile_verification_to_svm,
-        syscall_parameter_address_restrictions,
         virtual_address_space_adjustments,
         account_data_direct_mapping,
         enable_bpf_loader_set_authority_checked_ix,
@@ -42,6 +41,7 @@ pub fn compare_svm_feature_sets(a: &SVMFeatureSet, b: &SVMFeatureSet) {
         get_sysvar_syscall_enabled,
         last_restart_slot_sysvar,
         loader_v3_minimum_extend_program_size,
+        loader_v3_set_program_data_to_elf_length,
         reenable_sbpf_v0_execution,
         relax_fee_payer_constraint,
         relax_post_exec_min_balance_check,
